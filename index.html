@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed-Amine Chaabane | Full-Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio professionnel de Mohammed-Amine Chaabane, Développeur Full-Stack (PHP, Laravel, React).">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">M. AMINE <span style="color: var(--accent);">CHAABANE.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav-home">Accueil</a></li>
+                <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
+                <li><a href="#experience" data-i18n="nav-experience">Expérience</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Compétences</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <div class="lang-group">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="de">DE</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                    </div>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-image"
+            style="background: linear-gradient(rgba(3, 7, 18, 0.8), rgba(3, 7, 18, 0.8)), url('images/hero_bg.png'); background-color: #030712;">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content" data-aos>
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <!-- <div class="status-badge" data-aos="fade-down">
+                        <span class="status-dot"></span>
+                        <span data-i18n="live-status">Active: Coding a React Dashboard</span>
+                    </div> -->
+                    <div class="hero-title-box">
+                        <h1 data-i18n="hero-title">Transformer des idées en</h1>
+                        <span class="typewriter-static" data-i18n="hero-static-text">expériences digitales</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary btn-magnetic" data-i18n="cta-contact">Me contacter</a>
+                        <a href="#projects" class="btn btn-outline btn-magnetic" style="margin-left: 1rem;"
+                            data-i18n="cta-projects">Voir mes projets</a>
+                    </div>
+                </div>
+                <div class="hero-portrait" data-aos="fade-left">
+                    <div class="portrait-wrapper">
+                        <img src="images/profile.png" alt="Mohammed-Amine Chaabane">
+                        <div class="portrait-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="about-title" data-i18n="hero-about-title">À Propos</h3>
+                <p data-i18n="hero-subtitle">Je suis Mohammed-Amine Chaabane, professionnel du digital passionné par la
+                    création d’expériences numériques modernes et efficaces. Rigoureux, créatif et orienté solution, je
+                    conçois des projets alliant esthétique, performance et utilité. Mon approche repose sur l’écoute,
+                    l’analyse et l’amélioration continue afin de transformer chaque idée en une expérience digitale
+                    pertinente et de qualité.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos><span data-i18n="projects-title-1">Projets</span> <span
+                    style="color: var(--accent);" data-i18n="projects-title-2">Récents</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1: Prestige Drive -->
+                <div class="project-card spotlight-card" data-aos>
+                    <div class="spotlight"></div>
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%2300d4ff'%3EPrestige Drive%3C/text%3E%3C/svg%3E"
+                            alt="Prestige Drive">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><span data-i18n="project-view">Voir le projet</span> <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project-1-name">Prestige Drive</h3>
+                        <p data-i18n="project-1-desc">Système de gestion de location de voitures de luxe avec
+                            réservation en ligne.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Mayza -->
+                <div class="project-card spotlight-card" data-aos>
+                    <div class="spotlight"></div>
+                    <div class="project-image">
+                        <img src="images/Mayza.png" alt="Mayza Marketing">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><span data-i18n="project-view">Voir le projet</span> <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project-2-name">Mayza Marketing</h3>
+                        <p data-i18n="project-2-desc">Plateforme web et outils de gestion pour une agence de marketing
+                            digital.</p>
+                        <div class="project-tags">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Wejehni -->
+                <div class="project-card spotlight-card" data-aos>
+                    <div class="spotlight"></div>
+                    <div class="project-image">
+                        <img src="images/wejehni.png" alt="Wejehni">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><span data-i18n="project-view">Voir le projet</span> <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project-3-name">Wejehni</h3>
+                        <p data-i18n="project-3-desc">Portail d'orientation académique et professionnelle pour les
+                            étudiants.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos><span data-i18n="exp-title-1"></span>Expérience</span> <span
+                    style="color: var(--accent);" data-i18n="exp-title-2">Professionnelle</span>
+            </h2>
+            <div class="timeline">
+                <!-- Post Actuel -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card spotlight-card">
+                        <div class="spotlight"></div>
+                        <span class="timeline-date" data-i18n="exp-1-date">09 / 2023 – Aujourd’hui</span>
+                        <h3 data-i18n="exp-1-role">Développeur Web — Mayza Marketing (Télétravail)</h3>
+                        <p style="color: var(--accent); margin-bottom: 0.5rem;" data-i18n="exp-1-company">Mayza
+                            Marketing</p>
+                        <p data-i18n="exp-1-desc">Maintenance et amélioration d’outils informatiques existants,
+                            développement de nouvelles fonctionnalités et création de sites web personnalisés (WordPress
+                            et projets from scratch) en utilisant les technologies étudiées en formation ainsi que de
+                            nouvelles compétences acquises en auto-formation.</p>
+                    </div>
+                </div>
+
+                <!-- Stage Nanoera -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date" data-i18n="exp-2-date">01 / 03 / 2023 – 31 / 03 / 2023</span>
+                        <h3 data-i18n="exp-2-role">Stagiaire Développeur Web — L’ONEE</h3>
+                        <p style="color: var(--accent); margin-bottom: 0.5rem;" data-i18n="exp-2-company">ONEE</p>
+                        <p data-i18n="exp-2-desc">Réalisation d’un projet de fin d’études portant sur la digitalisation
+                            d’un formulaire papier, en concevant un outil de saisie numérique avec HTML, CSS, JavaScript
+                            et les bonnes pratiques UX.</p>
+                    </div>
+                </div>
+
+                <!-- Stage Soft Cactus -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date" data-i18n="exp-3-date">01 / 05 / 2021 – 31 / 05 / 2021</span>
+                        <h3 data-i18n="exp-3-role">Stagiaire Développeur Web — Nanoera Systems</h3>
+                        <p style="color: var(--accent); margin-bottom: 0.5rem;" data-i18n="exp-3-company">Nanoera
+                            Systems</p>
+                        <p data-i18n="exp-3-desc">Application des compétences acquises durant la formation Greenchip
+                            pour développer et intégrer des fonctionnalités web utilisant HTML, CSS, SQL, dans le cadre
+                            d’un stage de fin de formation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: var(--secondary-bg);">
+        <div class="container">
+            <h2 class="section-title" data-aos><span data-i18n="skills-title-1">Stack</span> <span
+                    style="color: var(--accent);" data-i18n="skills-title-2">Technique</span></h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category" data-aos>
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5/CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript / ES6+</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="fab fa-css3"></i> TailwindCSS</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category" data-aos>
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category" data-aos>
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skill-tools">Outils</span></h3>
+                    <div class="skill-list">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/Github</span>
+                        <span class="skill-tag"><i class="fab fa-adobe"></i> Adobe XD</span>
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> UML</span>
+                        <span class="skill-tag"><i class="fab fa-wordpress"></i> CMS (WordPress)</span>
+                        <span class="skill-tag"><i class="fas fa-tasks"></i> Agile (Scrum/Trello)</span>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="skill-category" data-aos>
+                    <h3><i class="fas fa-language"></i> <span data-i18n="skill-languages">Langues</span></h3>
+                    <div class="skill-list">
+                        <span class="skill-tag" data-i18n="lang-ar">Arabe</span>
+                        <span class="skill-tag" data-i18n="lang-fr">Français</span>
+                        <span class="skill-tag" data-i18n="lang-en">Anglais</span>
+                        <span class="skill-tag" data-i18n="lang-de">Allemand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos><span data-i18n="edu-title-1">Parcours</span> <span
+                    style="color: var(--accent);" data-i18n="edu-title-2">Académique</span></h2>
+            <div class="education-grid">
+                <div class="edu-card" data-aos>
+                    <span class="timeline-date" data-i18n="edu-1-date">09/2024 - 06/2025</span>
+                    <h3 data-i18n="edu-1-name">Licence en Développement des Médias Numériques</h3>
+                    <p style="color: var(--text-muted);">École Supérieure de Technologie (EST), Oujda</p>
+                </div>
+                <div class="edu-card" data-aos>
+                    <span class="timeline-date" data-i18n="edu-2-date">10/2021 - 06/2023</span>
+                    <h3 data-i18n="edu-2-name">Technicien Spécialisé en Développement Web Full Stack</h3>
+                    <p style="color: var(--text-muted);">OFPPT, Oujda</p>
+                </div>
+                <div class="edu-card" data-aos>
+                    <span class="timeline-date" data-i18n="edu-3-date">01/2021 - 05/2021</span>
+                    <h3 data-i18n="edu-3-name">Développeur Web & Web Mobile – Formation en entreprenariat</h3>
+                    <p style="color: var(--text-muted);">Greenchip 2.0 en partenariat avec l’association Al Jisr, Oujda
+                    </p>
+                </div>
+                <div class="edu-card" data-aos>
+                    <span class="timeline-date" data-i18n="edu-4-date">09/2019 - 06/2020</span>
+                    <h3 data-i18n="edu-4-name">Baccalauréat en Sciences de la Vie et de la Terre</h3>
+                    <p style="color: var(--text-muted);">Lycée Oued Eddahab, Oujda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-header" data-aos>
+                <h2 class="contact-title" data-i18n="contact-main-title">Contact & Coordonnées</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-sidebar" data-aos>
+                    <div class="info-group">
+                        <h3 data-i18n="contact-info-title">Coordonnées</h3>
+                        <p class="info-subtitle" data-i18n="contact-info-desc">N'hésitez pas à me contacter pour toute
+                            collaboration ou opportunité professionnelle.</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="method-detail">
+                                <span class="method-label">Localisation</span>
+                                <span class="method-value">Oujda, Maroc</span>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="method-detail">
+                                <span class="method-label">Téléphone</span>
+                                <span class="method-value">+212 772564848</span>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="method-detail">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">Mohammedaminechaabane@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="method-detail">
+                                <span class="method-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/mohammedaminechaabane/" target="_blank"
+                                    class="method-value">CHAABANE Mohammed-Amine</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos>
+                    <form id="contact-form" action="https://formsubmit.co/ajax/Mohammedaminechaabane@gmail.com"
+                        method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form-name">Nom complet</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required
+                                    data-i18n-placeholder="form-name-ph">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="form-email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required
+                                    data-i18n-placeholder="form-email-ph">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message" data-i18n="form-message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required
+                                    data-i18n-placeholder="form-message-ph"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span data-i18n="form-submit">Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+            <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Mohammed-Amine Chaabane. Tous droits
+                réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
