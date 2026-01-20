@@ -1003,6 +1003,8 @@ nav {
     backdrop-filter: blur(20px);
 }
 
+
+
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -1330,4 +1332,45 @@ nav {
 
 [dir="rtl"] .nav-actions {
     flex-direction: row-reverse;
+}
+
+/* Premium Download CV Button Redesign - Simple */
+.btn-cv-premium {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(rgba(3, 7, 18, 0.9), rgba(3, 7, 18, 0.9)) padding-box,
+        var(--gradient-primary) border-box;
+    border: 2px solid transparent;
+    color: var(--text-main);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cv-premium:hover {
+    box-shadow: 0 0 20px var(--accent-glow);
+    color: #fff;
+    background: linear-gradient(rgba(3, 7, 18, 0.7), rgba(3, 7, 18, 0.7)) padding-box,
+        var(--gradient-primary) border-box;
+    /* No movement */
+}
+
+.btn-cv-premium i {
+    font-size: 1.2rem;
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+.btn-cv-premium:hover i {
+    color: #fff;
+    /* No movement */
 }
