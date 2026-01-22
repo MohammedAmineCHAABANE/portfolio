@@ -1174,6 +1174,25 @@ nav {
         gap: 2rem;
     }
 
+    .contact-card-premium {
+        padding: 1.5rem;
+        /* Reduce padding on mobile */
+    }
+
+    .visual-icon-box {
+        width: 120px;
+        height: 120px;
+    }
+
+    .visual-icon-box i {
+        font-size: 3rem;
+    }
+
+    .card-details {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
     .contact-row {
         flex-direction: column;
         text-align: center;
