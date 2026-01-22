@@ -1,3 +1,10 @@
+/**
+ * Portfolio Script
+ * Author: Mohammed-Amine Chaabane
+ * Year: 2026
+ */
+'use strict';
+
 document.addEventListener('DOMContentLoaded', () => {
     // 0. Translation Data
     const translations = {
@@ -432,53 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
         animateParticles();
     }
 
-    // 8. Simple form submission feedback (moved from index.html)
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            // FormSubmit AJAX Submission
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Envoi en cours...';
-            submitBtn.disabled = true;
-
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            fetch(contactForm.action, {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            })
-                .then(response => {
-                    if (response.ok) {
-                        const msg = currentLang === 'fr' ? 'Message envoyé avec succès !' :
-                            (currentLang === 'en' ? 'Message sent successfully!' :
-                                (currentLang === 'de' ? 'Nachricht erfolgreich gesendet!' : 'تم إرسال الرسالة بنجاح!'));
-                        alert(msg);
-                        contactForm.reset();
-                    } else {
-                        console.error('FormSubmit Error:', response);
-                        const err = currentLang === 'fr' ? 'Erreur serveur (vérifiez l\'activation FormSubmit).' : 'Oops! Server error (check FormSubmit activation).';
-                        alert(err);
-                    }
-                })
-                .catch(error => {
-                    console.error('Fetch Error:', error);
-                    const err = currentLang === 'fr' ? 'Erreur de connexion.' : 'Oops! Connection error.';
-                    alert(err);
-                })
-                .finally(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                });
-        });
-    }
+    // 8. Form Submission Removed
 
     // 9. Scroll to Top Button
     const scrollTopBtn = document.getElementById('scrollTopBtn');
