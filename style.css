@@ -42,7 +42,11 @@
     /* Typography */
     --font-heading: 'Poppins', 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
+
+
 
 body {
     cursor: none;
@@ -366,9 +370,7 @@ nav {
 }
 
 /* Original hero glow can stay */
-.hero-bg-glow {
-    /* ... existing content ... */
-}
+
 
 .hero-title-box {
     margin-bottom: 2rem;
@@ -1134,135 +1136,250 @@ nav {
 }
 
 /* Responsive */
+/* Responsive Design */
+
+/* Tablet & Smaller Desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .hero-flex {
+        gap: 3rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .typewriter-static {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .hero-text {
+        padding-top: 6rem;
+    }
+
+    .projects-grid,
+    .education-grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Tablet & Mobile (max-width: 992px) */
 @media (max-width: 992px) {
+
+    /* Navigation */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
     .nav-links {
-        position: fixed !important;
-        top: 80px !important;
-        right: -100% !important;
-        visibility: visible;
-        /* Ensure visible on mobile when toggled */
-        opacity: 0;
-        pointer-events: none;
-        display: flex;
-        /* Force display flex for mobile menu */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        /* Full width for better experience */
+        background: rgba(3, 7, 18, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        gap: 2.5rem;
     }
 
     .nav-links.active {
-        right: 0 !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        pointer-events: auto !important;
+        right: 0;
     }
 
-    .menu-toggle {
-        display: block !important;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    .education-grid {
-        grid-template-columns: 1fr !important;
+    .nav-links a {
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
     .nav-actions {
-        gap: 0.8rem !important;
+        z-index: 1001;
+        /* Keep actions above menu */
     }
 
     .lang-switcher {
-        display: none !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 0 !important;
+        display: flex;
+        /* Keep language switcher visible */
     }
 
-    .timeline-item {
-        width: 100% !important;
-        padding-left: 2rem !important;
-        padding-right: 0 !important;
-        text-align: left !important;
-        left: 0 !important;
+    /* Hero Section */
+    .hero-flex {
+        flex-direction: column-reverse;
+        /* Text on top is usually better, but design might prefer image on top? Let's stick to column for now, usually image top or text top depending on preference. The user asked for "Projets" so let's keep it standard. Actually current code has text then image. Let's stack them. */
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
     }
 
-    .timeline-dot {
-        left: -8px !important;
-        right: auto !important;
+    .hero-text {
+        padding-top: 8rem;
+        /* Space for fixed nav */
+        text-align: center;
     }
 
-    .education-grid,
-    .contact-container,
-    .skills-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    .section-title {
-        font-size: 2.22rem !important;
-        margin-bottom: 3rem !important;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem !important;
-        line-height: 1.1 !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        max-width: 100% !important;
-        padding: 0 1rem !important;
-    }
-
-    .hero p {
-        font-size: 1.05rem !important;
-        padding: 0 1rem !important;
+    .hero-title-box {
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
     .cta-buttons {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 1.2rem !important;
-        width: 100% !important;
-        max-width: 280px !important;
-        margin: 0 auto !important;
+        justify-content: center;
     }
 
-    .btn {
-        width: 100% !important;
-        padding: 0.8rem 1.5rem !important;
+    .hero-portrait {
+        margin-top: 2rem;
     }
 
-    .nav-content {
-        height: 70px !important;
+    .portrait-wrapper {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
     }
 
-    .nav-links {
-        top: 70px !important;
-        height: calc(100vh - 70px) !important;
+    .hero-bottom-card {
+        margin-top: 6rem;
+        padding: 2rem;
     }
 
-    .timeline-card {
-        padding: 1.5rem !important;
-        width: 100% !important;
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        /* Stack projects */
+    }
+
+    .project-card:nth-child(1) .project-image {
+        height: 280px;
+        /* Reset height */
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .contact-sidebar {
+        order: 2;
+        /* Form first on mobile usually? Or info first? Let's keep info then form or vice versa. Usually form is important. Let's keep existing order but stacked. */
+    }
+
+    .contact-header {
+        margin-bottom: 3rem;
     }
 }
 
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Timeline / Experience */
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 0;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+
+    .timeline-dot {
+        left: -8px;
+        right: auto;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot {
+        right: auto;
+        left: -8px;
+    }
+
+    .timeline-card {
+        padding: 1.5rem;
+    }
+
+    /* Skills */
+    .skills-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Buttons */
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-left: 0 !important;
+        /* Override inline style */
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+        padding: 2rem;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
     .hero h1 {
-        font-size: 1.95rem !important;
+        font-size: 2.2rem;
+    }
+
+    .typewriter-static {
+        font-size: 2.2rem;
+    }
+
+    .portrait-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-bottom-card {
+        padding: 1.5rem;
     }
 
     .section-title {
-        font-size: 1.8rem !important;
+        font-size: 2rem;
     }
 
-    .container {
-        padding: 0 1.2rem !important;
+    .contact-title {
+        font-size: 2.2rem;
     }
 
-    .hero-bg-glow {
-        width: 300px !important;
-        height: 300px !important;
+    .form-group input,
+    .form-group textarea {
+        padding: 1rem;
     }
 }
 
@@ -1373,4 +1490,52 @@ nav {
 .btn-cv-premium:hover i {
     color: #fff;
     /* No movement */
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s var(--transition-smooth);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    /* Ensure centering */
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background: var(--accent);
+    color: #000;
+    box-shadow: 0 0 20px var(--accent-glow);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
 }

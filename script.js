@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "contact-info-title": "Coordonnées",
             "contact-info-desc": "N'hésitez pas à me contacter pour toute collaboration ou opportunité professionnelle.",
             "form-title": "Envoyez-moi un message",
-            "cta-cv": "Télécharger mon CV",
+            "cta-cv": "Consulter mon CV",
             "form-name": "Nom complet",
             "form-name-ph": "Votre nom",
             "form-email": "Email",
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "contact-info-title": "Contact Details",
             "contact-info-desc": "Feel free to contact me for any collaboration or professional opportunity.",
             "form-title": "Send Me a Message",
-            "cta-cv": "Download CV",
+            "cta-cv": "View My CV",
             "form-name": "Full Name",
             "form-name-ph": "Your name",
             "form-email": "Email",
@@ -282,13 +282,13 @@ document.addEventListener('DOMContentLoaded', () => {
     magneticBtns.forEach(btn => {
         btn.addEventListener('mousemove', function (e) {
             const position = btn.getBoundingClientRect();
-            const x = e.pageX - position.left - position.width / 2;
-            const y = e.pageY - position.top - position.height / 2;
+            const x = e.clientX - position.left - position.width / 2;
+            const y = e.clientY - position.top - position.height / 2;
 
             btn.style.transform = `translate(${x * 0.3}px, ${y * 0.5}px)`;
         });
 
-        btn.addEventListener('mouseout', function () {
+        btn.addEventListener('mouseleave', function () {
             btn.style.transform = 'translate(0px, 0px)';
         });
     });
@@ -479,4 +479,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
+
+    // 9. Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+
 });
