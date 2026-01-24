@@ -277,53 +277,6 @@ nav {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    /* Reduced from 1.5rem */
-}
-
-.lang-switcher {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 0.3rem;
-    border-radius: 12px;
-    border: 1px solid var(--glass-border);
-}
-
-.lang-group {
-    display: flex;
-    gap: 0.2rem;
-}
-
-.lang-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-muted);
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 0.4rem 0.8rem;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.3s var(--transition-smooth);
-}
-
-.lang-btn.active {
-    background: var(--accent);
-    color: #030712;
-    box-shadow: 0 0 15px var(--accent-glow);
-}
-
-/* The following lines were orphaned and are now removed as per the instruction's implied fix */
-/*
-cursor: pointer;
-color: var(--text-main);
-}
-*/
-
-/* Language Switcher */
-.nav-actions {
-    display: flex;
-    align-items: center;
     gap: 1.5rem;
 }
 
@@ -362,6 +315,16 @@ color: var(--text-main);
 .lang-btn:hover:not(.active) {
     color: var(--text-main);
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-main);
+    margin-left: 1rem;
+}
+
+
 
 /* Custom Cursor */
 .custom-cursor {
