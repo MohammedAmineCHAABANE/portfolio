@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "project-3-desc": "Academic and professional guidance portal for students.",
             "exp-title-1": "Professional",
             "exp-title-2": "Experience",
-            "exp-1-date": "09 / 2023 – Present",
+            "exp-1-date": "09 / 2023 – 12 / 2025",
             "exp-1-role": "Web Developer — Mayza Marketing (Remote)",
             "exp-1-company": "Mayza Marketing",
             "exp-1-desc": "Maintenance and improvement of existing IT tools, development of new features, and creation of custom websites (WordPress and projects from scratch) using technologies studied in training as well as new skills acquired through self-learning.",
