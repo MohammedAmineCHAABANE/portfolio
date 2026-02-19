@@ -63,6 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "edu-4-date": "09/2019 - 06/2020",
             "edu-4-name": "Baccalauréat en Sciences de la Vie et de la Terre",
             "contact-main-title": "Contact & Coordonnées",
+            "contact-label-location": "Localisation",
+            "contact-value-location": "Oujda, Maroc",
+            "contact-label-phone": "Téléphone",
+            "edu-1-school": "École Supérieure de Technologie (EST), Oujda",
+            "edu-2-school": "OFPPT, Oujda",
+            "edu-3-school": "Greenchip 2.0 en partenariat avec l’association Al Jisr, Oujda",
+            "edu-4-school": "Lycée Oued Eddahab, Oujda",
             "cta-cv": "Consulter Mon CV",
             "typewriter": ["solutions digitales performantes", "expériences utilisateur uniques", "architectures web robustes"]
         },
@@ -120,12 +127,88 @@ document.addEventListener('DOMContentLoaded', () => {
             "edu-4-date": "09/2019 - 06/2020",
             "edu-4-name": "Baccalaureate in Life and Earth Sciences",
             "contact-main-title": "Contact & Details",
+            "contact-label-location": "Location",
+            "contact-value-location": "Oujda, Morocco",
+            "contact-label-phone": "Phone",
+            "edu-1-school": "Higher School of Technology (EST), Oujda",
+            "edu-2-school": "OFPPT, Oujda",
+            "edu-3-school": "Greenchip 2.0 in partnership with Al Jisr Association, Oujda",
+            "edu-4-school": "Oued Eddahab High School, Oujda",
             "cta-cv": "View My CV",
             "typewriter": ["powerful digital solutions", "unique user experiences", "robust web architectures"]
         },
+        de: {
+            "nav-home": "Startseite",
+            "nav-projects": "Projekte",
+            "nav-experience": "Erfahrung",
+            "nav-skills": "Fähigkeiten",
+            "nav-contact": "Kontakt",
+            "hero-title": "FULL STACK ENTWICKLER",
+            "hero-static-text": "digitale Erlebnisse",
+            "hero-about-title": "Über mich",
+            "hero-subtitle": "Ich bin Mohammed-Amine Chaabane, ein digitaler Profi mit Leidenschaft für die Erstellung moderner und effizienter digitaler Erlebnisse. Rigoros, kreativ und lösungsorientiert entwerfe ich Projekte, die Ästhetik, Leistung und Nutzen vereinen. Mein Ansatz basiert auf Zuhören, Analyse und kontinuierlicher Verbesserung, um jede Idee in ein relevantes und hochwertiges digitales Erlebnis zu verwandeln.",
+            "cta-contact": "Kontaktieren Sie mich",
+            "cta-projects": "Meine Projekte ansehen",
+            "projects-title-1": "Aktuelle",
+            "projects-title-2": "Projekte",
+            "project-view": "Projekt ansehen",
+            "project-1-name": "Prestige Drive",
+            "project-1-desc": "Luxusauto-Vermietungsmanagementsystem mit Online-Buchung.",
+            "project-2-name": "Mayza Marketing",
+            "project-2-desc": "Webplattform und Management-Tools für eine digitale Marketingagentur.",
+            "project-3-name": "Wejehni",
+            "project-3-desc": "Akademisches und berufliches Orientierungsportal für Studenten.",
+            "exp-title-1": "Berufliche",
+            "exp-title-2": "Erfahrung",
+            "exp-1-date": "09 / 2023 – 12 / 2025",
+            "exp-1-role": "Webentwickler — Mayza Marketing (Home-Office)",
+            "exp-1-company": "Mayza Marketing",
+            "exp-1-desc": "Wartung und Verbesserung bestehender IT-Tools, Entwicklung neuer Funktionen und Erstellung maßgeschneiderter Websites (WordPress und Projekte von Grund auf) unter Verwendung von in der Ausbildung erlernten Technologien sowie neuen, durch Selbststudium erworbenen Fähigkeiten.",
+            "exp-2-date": "01 / 03 / 2023 – 31 / 03 / 2023",
+            "exp-2-role": "Praktikant Webentwickler — L’ONEE",
+            "exp-2-company": "ONEE",
+            "exp-2-desc": "Abschluss eines Abschlussprojekts zur Digitalisierung eines Papierformulars durch Entwurf eines digitalen Dateneingabetools unter Verwendung von HTML, CSS, JavaScript und UX-Best-Practices.",
+            "exp-3-date": "01 / 05 / 2021 – 31 / 05 / 2021",
+            "exp-3-role": "Praktikant Webentwickler — Nanoera Systems",
+            "exp-3-company": "Nanoera Systems",
+            "exp-3-desc": "Anwendung der während der Greenchip-Schulung erworbenen Fähigkeiten zur Entwicklung und Integration von Webfunktionen mit HTML, CSS, SQL im Rahmen eines Abschlusspraktikums.",
+            "skills-title-1": "Tech",
+            "skills-title-2": "Stack",
+            "skill-tools": "Werkzeuge",
+            "skill-languages": "Sprachen",
+            "lang-ar": "Arabisch",
+            "lang-fr": "Französisch",
+            "lang-en": "Englisch",
+            "lang-de": "Deutsch",
+            "edu-title-1": "Akademischer",
+            "edu-title-2": "Werdegang",
+            "edu-1-date": "09/2024 - 06/2025",
+            "edu-1-name": "Bachelor in digitaler Medienentwicklung",
+            "edu-2-date": "10/2021 - 06/2023",
+            "edu-2-name": "Staatlich geprüfter Techniker für Full Stack Webentwicklung",
+            "edu-3-date": "01/2021 - 05/2021",
+            "edu-3-name": "Web- & Mobile-Entwickler – Unternehmertum-Schulung",
+            "edu-4-date": "09/2019 - 06/2020",
+            "edu-4-name": "Abitur in Lebens- und Erdwissenschaften",
+            "contact-main-title": "Kontakt & Details",
+            "contact-label-location": "Standort",
+            "contact-value-location": "Oujda, Marokko",
+            "contact-label-phone": "Telefon",
+            "edu-1-school": "Höhere Technische Schule (EST), Oujda",
+            "edu-2-school": "OFPPT, Oujda",
+            "edu-3-school": "Greenchip 2.0 in Partnerschaft mit dem Al Jisr Verein, Oujda",
+            "edu-4-school": "Oued Eddahab Gymnasium, Oujda",
+            "cta-cv": "Meinen Lebenslauf ansehen",
+            "typewriter": ["leistungsstarke digitale Lösungen", "einzigartige Benutzererlebnisse", "robuste Webarchitekturen"]
+        },
     };
 
-    let currentLang = 'fr';
+    let currentLang = 'de';
+    let phrases;
+    let phraseIndex = 0;
+    let charIndex = 0;
+
+    updateLanguage('de');
 
     function updateLanguage(lang) {
         currentLang = lang;
@@ -152,6 +235,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.placeholder = translations[lang][key];
             }
         });
+
+        // Update CV Link based on language
+        const cvLink = document.getElementById('cv-link');
+        if (cvLink) {
+            const cvFiles = {
+                fr: 'CV CHAABANE Mohammed-Amine F.pdf',
+                en: 'CV CHAABANE Mohammed-Amine EN.pdf',
+                de: 'CV CHAABANE Mohammed-Amine DE.pdf'
+            };
+            cvLink.href = cvFiles[lang] || cvFiles.fr;
+        }
 
         // Update typewriter source
         phrases = translations[lang].typewriter;
@@ -194,9 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Typewriter Effect
     const textElement = document.querySelector('.typewriter');
-    let phrases = translations[currentLang].typewriter;
-    let phraseIndex = 0;
-    let charIndex = 0;
+    phrases = translations[currentLang].typewriter;
+    phraseIndex = 0;
+    charIndex = 0;
     let isDeleting = false;
     let typeSpeed = 100;
 
