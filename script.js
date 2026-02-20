@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cvFiles = {
                 fr: 'CV CHAABANE Mohammed-Amine F.pdf',
                 en: 'CV CHAABANE Mohammed-Amine EN.pdf',
-                de: 'CV CHAABANE Mohammed-Amine DE.pdf'
+                de: 'Lebenslauf_Mohammed-Amine_Chaabane.pdf'
             };
             cvLink.href = cvFiles[lang] || cvFiles.fr;
         }
